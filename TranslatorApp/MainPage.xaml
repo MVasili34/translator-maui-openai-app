@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TranslatorApp.MainPage"
+             BackgroundColor="Aqua">
+    <ScrollView>
+
+        <FlexLayout Wrap="Wrap" AlignItems="Center" JustifyContent="SpaceAround" AlignContent="Center" Direction="RowReverse">
+            <Image
+                Source="landing.png"
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                HeightRequest="200"
+                HorizontalOptions="Center" 
+                VerticalOptions="Center" Margin="10"/>
+            <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            >
+                
+                <Label
+                Text="КУРСОВАЯ РАБОТА" FontAttributes="Bold"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="32" TextColor="Black"
+                 />
+
+                <Label
+                Text="По дисциплине: ООП"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
+                FontSize="18" TextColor="Black"
+                />
+                <Label
+                Text="тема: 'Англо-русский переводчик'" FontAttributes="Bold"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
+                FontSize="18" TextColor="Black"
+                 />
+                <Label
+                Text="Работу выполнил&#10;студент группы ИТ21ДР62ПИ&#10;Дыбов Василий Сергеевич"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
+                FontSize="18" Margin="0" TextColor="Black"   
+                 />
+
+                <Label
+                Text="Руководитель&#10;Старший преподователь&#10;Федорченко Григорий Сергеевич"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
+                FontSize="18" Margin="0" TextColor="Black"
+                    
+                 />
+                <Button
+                x:Name="CounterBtn"
+                Text="К переводчику!" BackgroundColor="Indigo"
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnCounterClicked"
+                TextColor="White" Margin="10" />
+
+            </VerticalStackLayout>
+            
+        </FlexLayout>
+    </ScrollView>
+
+</ContentPage>

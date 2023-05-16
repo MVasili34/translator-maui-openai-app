@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TranslatorApp.TextFromImage"
+             Title="Перевод с картинки">
+    <ScrollView>
+        <FlexLayout Wrap="Wrap" AlignItems="Center" JustifyContent="SpaceAround"  Direction="Row">
+          
+            <VerticalStackLayout>
+                <Button ImageSource="printer.png" Clicked="imageButton_Clicked" HeightRequest="40" WidthRequest="58" BackgroundColor="#BFCDDA" BorderColor="Black"  BorderWidth="1" Margin="5"/>
+                <Image x:Name="pictureBox" Source="instructiontouse.png" SemanticProperties.Description="Image to read" HeightRequest="250" HorizontalOptions="Center"/>
+            </VerticalStackLayout>
+            <VerticalStackLayout>
+                <Editor x:Name="field1" HeightRequest="250" WidthRequest="325" BackgroundColor="#BFCDDA"  FontSize="16" TextColor="Black" Margin="5"/>
+                <HorizontalStackLayout>
+                    <Button Text="Получить текст (RU)" Clicked="rusButton_Clicked" BackgroundColor="Indigo" TextColor="White"  BorderWidth="1" HorizontalOptions="Center" Margin="2"/>
+                    <Button Text="Получить текст (EN)" Clicked="engButton_Clicked" BackgroundColor="Indigo" TextColor="White"  BorderWidth="1" HorizontalOptions="Center" Margin="2"/>
+                </HorizontalStackLayout>
+                <Button Text="Перевести" Clicked="redirect_Clicked" BackgroundColor="Indigo" TextColor="White"  BorderWidth="1" HorizontalOptions="Center" Margin="5"/>
+                <Label Text=""/>
+            </VerticalStackLayout>
+        </FlexLayout>
+    </ScrollView>
+</ContentPage>
