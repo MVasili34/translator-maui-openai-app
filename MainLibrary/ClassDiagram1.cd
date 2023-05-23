@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="MainLibrary.AIMakesRequest" BaseTypeListCollapsed="true">
-    <Position X="10.25" Y="2.25" Width="1.5" />
+    <Position X="9" Y="2.25" Width="2.75" />
     <TypeIdentifier>
       <HashCode>AQAAAACAQAAAEAAAAAAAAECEAAAAAAAAgAAAAAAAAAA=</HashCode>
       <FileName>AIMakesRequest.cs</FileName>
@@ -9,14 +9,14 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="MainLibrary.ImageText">
-    <Position X="5.25" Y="0.5" Width="1.75" />
+    <Position X="5.25" Y="0.5" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
       <FileName>TextFromImages.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="MainLibrary.TextFromImages">
-    <Position X="7.5" Y="3.5" Width="2" />
+    <Position X="6" Y="3.5" Width="2.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
       <FileName>TextFromImages.cs</FileName>

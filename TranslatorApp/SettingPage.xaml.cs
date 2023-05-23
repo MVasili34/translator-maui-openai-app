@@ -60,6 +60,7 @@ combobox1.IsEnabled = false;
             {
                 Preferences.Set("OPEN_APIKEY",  openAIField.Text);
                 Preferences.Set("dTemp", Math.Round(slider.Value, 1));
+#if WINDOWS
                 if (combobox1.SelectedItem.ToString() != "NONE")
                 {
                     Preferences.Set("comboValue1", combobox1.SelectedItem.ToString());
@@ -68,6 +69,7 @@ combobox1.IsEnabled = false;
                 {
                     Preferences.Set("comboValue2", combobox2.SelectedItem.ToString());
                 }
+#endif
                 DisplayAlert("Успех!", "Настройки успешно сохранены!", "OK");
             }
         }

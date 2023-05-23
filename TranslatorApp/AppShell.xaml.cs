@@ -6,11 +6,12 @@ public partial class AppShell : Shell
 	{
 		InitializeComponent();
         FlyoutBackgroundColor = new Color(51, 51, 51);
-		
+
+
 #if ANDROID
-	FlyoutBackgroundColor = new Color(255, 255, 255);
+	FlyoutBackgroundColor = new Color(51, 51, 51);
 	itemNotToDisplay.IsVisible = false;
 #endif
-		
-	}
+
+    }
 }

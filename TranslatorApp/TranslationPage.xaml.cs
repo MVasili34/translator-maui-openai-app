@@ -91,8 +91,8 @@ public partial class TranslationPage : ContentPage
                     {
                         Locale = locales.Single(l => l.Name ==( MainChosenLanguageFlag switch
                         {
-                            0 => "Russian (Russia)",
-                            1 => "English (United States)",
+                            0 => "русский (Россия)",
+                            1 => "английский (Великобритания)",
                             _ => throw new VoiceException("Ошибка озвучивания")
                         }))
                     });
@@ -130,8 +130,8 @@ public partial class TranslationPage : ContentPage
                     {
                         Locale = locales.Single(l => l.Name ==( MainChosenLanguageFlag switch
                         {
-                            0 => "English (United States)",
-                            1 => "Russian (Russia)",
+                            0 => "английский (Великобритания)",
+                            1 => "русский (Россия)",
                             _ => throw new VoiceException("Ошибка озвучивания")
                         }))
                     });
