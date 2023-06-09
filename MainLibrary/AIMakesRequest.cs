@@ -15,7 +15,7 @@ namespace MainLibrary
     }
     public class AIMakesRequest : AITranslate
     {
-        private readonly string OPENAI_API_KEY = "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";
+        private readonly string OPENAI_API_KEY = "key_here";
         private readonly string requestTemp = "0.7";
         private string sAnswer = "";
         public AIMakesRequest() { }
