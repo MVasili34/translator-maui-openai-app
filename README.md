@@ -23,5 +23,6 @@
 ![image](https://github.com/MVasili34/Translator_NET_MAUI_App/assets/117523384/b005258e-5f8f-4d10-8928-85066e17fe0f)
 ![image](https://github.com/MVasili34/Translator_NET_MAUI_App/assets/117523384/868a39bc-bda2-4341-a95b-cb20e09b77a9)
   
- ![image](https://github.com/MVasili34/Translator_NET_MAUI_App/assets/117523384/ca7d1644-c4d9-49e4-b7d4-b5ca082cb548)
-![image](https://github.com/MVasili34/Translator_NET_MAUI_App/assets/117523384/cbdc2944-10bf-4982-980e-bc2e91faf16f)
+![image](https://github.com/MVasili34/Translator_NET_MAUI_App/assets/117523384/fe30c3b7-0b37-41e8-b8f2-907c707689a9)
+![image](https://github.com/MVasili34/Translator_NET_MAUI_App/assets/117523384/a1da97d0-a7a9-48ab-9894-7410c08d5bd1)
+
