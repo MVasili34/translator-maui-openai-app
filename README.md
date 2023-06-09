@@ -10,18 +10,18 @@
   
   Cкриншоты Windows-версии приложения:
   
-  ![image](https://github.com/MVasili34/Translator_NET_MAUI_App/assets/117523384/4b5f2a3e-c396-4355-ac00-e3bce23cfeff)
+![image](https://github.com/MVasili34/Translator_NET_MAUI_App/assets/117523384/a2270b79-6e73-497e-b609-40e602bec45f)
   
-  ![image](https://github.com/MVasili34/Translator_NET_MAUI_App/assets/117523384/6639b03b-ea0d-4f0a-a0e1-6a4446f6f8c6)
+![image](https://github.com/MVasili34/Translator_NET_MAUI_App/assets/117523384/1f5e23f3-7a29-4e4b-908e-821fb915d477)
+
+![image](https://github.com/MVasili34/Translator_NET_MAUI_App/assets/117523384/e34dfe68-e68e-44ca-b0e2-fe7165554228)
   
-  ![image](https://github.com/MVasili34/Translator_NET_MAUI_App/assets/117523384/e8f8ef36-e862-46e4-869b-8637a635d65f)
-  
-  ![image](https://github.com/MVasili34/Translator_NET_MAUI_App/assets/117523384/fa4920cc-97f8-45e2-9f1a-14590040fa20)
+![image](https://github.com/MVasili34/Translator_NET_MAUI_App/assets/117523384/c575c977-5e78-4c21-aca9-4850ee83b908)
   
   Скриншоты мобильной версии (Эмулятор: Android 9 - API 28, процессор - x86, память 1 гб):
   
-  ![image](https://github.com/MVasili34/Translator_NET_MAUI_App/assets/117523384/0e4070b4-914f-4e7d-80cb-ac33bef0768b)
-  ![image](https://github.com/MVasili34/Translator_NET_MAUI_App/assets/117523384/16df767a-6b34-427a-9f38-87b98e82e230)
+![image](https://github.com/MVasili34/Translator_NET_MAUI_App/assets/117523384/98c8d20c-c3b9-4280-bf4c-3914359fa419)
+![image](https://github.com/MVasili34/Translator_NET_MAUI_App/assets/117523384/d4ad71e0-ed1c-437b-9a39-28453394a264)
   
-  ![image](https://github.com/MVasili34/Translator_NET_MAUI_App/assets/117523384/d0c75ee7-86d0-4150-a915-9fefd082c9f5) 
-  ![image](https://github.com/MVasili34/Translator_NET_MAUI_App/assets/117523384/3104d851-8650-4ff0-88d2-24106eac45b4)
+ ![image](https://github.com/MVasili34/Translator_NET_MAUI_App/assets/117523384/ca7d1644-c4d9-49e4-b7d4-b5ca082cb548)
+![image](https://github.com/MVasili34/Translator_NET_MAUI_App/assets/117523384/cbdc2944-10bf-4982-980e-bc2e91faf16f)
