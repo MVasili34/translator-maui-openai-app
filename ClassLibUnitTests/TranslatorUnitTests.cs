@@ -8,7 +8,7 @@ namespace ClassLibUnitTests
         public void TestGetEnglishTranslation()
         {
             //размещение
-            string key = "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";
+            string key = "key here";
             string temp = "0.7";
             var request = new AIMakesRequest(key, temp);
 
@@ -22,7 +22,7 @@ namespace ClassLibUnitTests
         public void TestGetRussianTranslation()
         {
             //размещение
-            string key = "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";
+            string key = "key here";
             string temp = "0.7";
             var request = new AIMakesRequest(key, temp);
 

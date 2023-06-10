@@ -18,7 +18,7 @@ combobox1.IsEnabled = false;
     protected async override void OnAppearing()
     {
         base.OnAppearing();
-        openAIField.Text = Preferences.Get("OPEN_APIKEY", "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");
+        openAIField.Text = Preferences.Get("OPEN_APIKEY", "key here");
         slider.Value = Preferences.Get("dTemp", 0.7);
 #if WINDOWS
         locales = await TextToSpeech.GetLocalesAsync();

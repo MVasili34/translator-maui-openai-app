@@ -47,7 +47,7 @@ public partial class TranslationPage : ContentPage
 
     private async void translateBut_Clicked(object sender, EventArgs e)
     {
-        request = new(Preferences.Get("OPEN_APIKEY", "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"),
+        request = new(Preferences.Get("OPEN_APIKEY", "key here"),
              Preferences.Get("dTemp", 0.7).ToString());
         try
         {
