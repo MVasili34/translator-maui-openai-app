@@ -54,7 +54,7 @@ combobox1.IsEnabled = false;
         {
             if (String.IsNullOrWhiteSpace(openAIField.Text))
             {
-                throw new EmptyFieldException("Поле для ключа OPENAI пустое");
+                throw new EmptyFieldException("ГЏГ®Г«ГҐ Г¤Г«Гї ГЄГ«ГѕГ·Г  OPENAI ГЇГіГ±ГІГ®ГҐ");
             }
             else
             {
@@ -70,17 +70,17 @@ combobox1.IsEnabled = false;
                     Preferences.Set("comboValue2", combobox2.SelectedItem.ToString());
                 }
 #endif
-                DisplayAlert("Успех!", "Настройки успешно сохранены!", "OK");
+                DisplayAlert("Г“Г±ГЇГҐГµ!", "ГЌГ Г±ГІГ°Г®Г©ГЄГЁ ГіГ±ГЇГҐГёГ­Г® Г±Г®ГµГ°Г Г­ГҐГ­Г»!", "OK");
             }
         }
         
         catch (EmptyFieldException)
         {
-            DisplayAlert("Ошибка!", "Пустое поле ввода OpenAI ключа!", "OK");
+            DisplayAlert("ГЋГёГЁГЎГЄГ !", "ГЏГіГ±ГІГ®ГҐ ГЇГ®Г«ГҐ ГўГўГ®Г¤Г  OpenAI ГЄГ«ГѕГ·Г !", "OK");
         } 
         catch (Exception ex)
         {
-            DisplayAlert("Ошибка!", ex.Message, "OK");
+            DisplayAlert("ГЋГёГЁГЎГЄГ !", ex.Message, "OK");
         }
     }
     private void Slider_ValueChanged(object sender, ValueChangedEventArgs e)

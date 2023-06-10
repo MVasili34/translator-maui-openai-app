@@ -6,21 +6,23 @@
     * распознавание текста с изображений (но только одного конкретного языка - русского или английского)
     * синтезация речи на стороне OS Windows и Android;
     * система настроек OpenAI, регулируящая точность перевода;
-  На данный момент приложение собиралось только на Windows и Andoid. На других ОС, таких как Mac OS, IOS работа не гарантирована.
-  Вот скриншоты версии для Windows:
+  На данный момент приложение собиралось только на Windows и Andoid. На других ОС, таких как Mac OS, IOS работа не гарантирована. Тестовые дебаг-устройства: Ноутбук Lenovo Legion Y530-15ICH (Win 11, RAM 8gb, i5-8300h), Мобильное устройство Xiaomi Redmi Note 11 (Android 12 - API 31, arm64-v8a, RAM 6gb).
   
-  ![image](https://github.com/MVasili34/Translator_NET_MAUI_App/assets/117523384/4b5f2a3e-c396-4355-ac00-e3bce23cfeff)
+  Cкриншоты Windows-версии приложения:
   
-  ![image](https://github.com/MVasili34/Translator_NET_MAUI_App/assets/117523384/6639b03b-ea0d-4f0a-a0e1-6a4446f6f8c6)
+![image](https://github.com/MVasili34/Translator_NET_MAUI_App/assets/117523384/a2270b79-6e73-497e-b609-40e602bec45f)
   
-  ![image](https://github.com/MVasili34/Translator_NET_MAUI_App/assets/117523384/e8f8ef36-e862-46e4-869b-8637a635d65f)
+![image](https://github.com/MVasili34/Translator_NET_MAUI_App/assets/117523384/1f5e23f3-7a29-4e4b-908e-821fb915d477)
+
+![image](https://github.com/MVasili34/Translator_NET_MAUI_App/assets/117523384/e34dfe68-e68e-44ca-b0e2-fe7165554228)
   
-  ![image](https://github.com/MVasili34/Translator_NET_MAUI_App/assets/117523384/fa4920cc-97f8-45e2-9f1a-14590040fa20)
+![image](https://github.com/MVasili34/Translator_NET_MAUI_App/assets/117523384/c575c977-5e78-4c21-aca9-4850ee83b908)
   
   Скриншоты мобильной версии (Эмулятор: Android 9 - API 28, процессор - x86, память 1 гб):
   
-  ![image](https://github.com/MVasili34/Translator_NET_MAUI_App/assets/117523384/0e4070b4-914f-4e7d-80cb-ac33bef0768b)
-  ![image](https://github.com/MVasili34/Translator_NET_MAUI_App/assets/117523384/16df767a-6b34-427a-9f38-87b98e82e230)
+![image](https://github.com/MVasili34/Translator_NET_MAUI_App/assets/117523384/b005258e-5f8f-4d10-8928-85066e17fe0f)
+![image](https://github.com/MVasili34/Translator_NET_MAUI_App/assets/117523384/014c6977-772c-43ae-afa2-6699cefc9da9)
   
-  ![image](https://github.com/MVasili34/Translator_NET_MAUI_App/assets/117523384/d0c75ee7-86d0-4150-a915-9fefd082c9f5) 
-  ![image](https://github.com/MVasili34/Translator_NET_MAUI_App/assets/117523384/3104d851-8650-4ff0-88d2-24106eac45b4)
+![image](https://github.com/MVasili34/Translator_NET_MAUI_App/assets/117523384/a3cda993-5d04-4e6f-8949-e1c6f6fda23d)
+![image](https://github.com/MVasili34/Translator_NET_MAUI_App/assets/117523384/a1da97d0-a7a9-48ab-9894-7410c08d5bd1)
+

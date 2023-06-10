@@ -32,15 +32,15 @@ public partial class TranslationPage : ContentPage
         {
             MainChosenLanguageFlag = 0;
             label2.Text = "English language field";
-            label1.Text = "Поле для русского языка";
-            field1.Placeholder = "Введите текст для перевода...";
+            label1.Text = "ГЏГ®Г«ГҐ Г¤Г«Гї Г°ГіГ±Г±ГЄГ®ГЈГ® ГїГ§Г»ГЄГ ";
+            field1.Placeholder = "Г‚ГўГҐГ¤ГЁГІГҐ ГІГҐГЄГ±ГІ Г¤Г«Гї ГЇГҐГ°ГҐГўГ®Г¤Г ...";
         }
         else
         {
             field1.Placeholder = "Enter text to translate...";
             MainChosenLanguageFlag = 1;
             label1.Text = "English language field";
-            label2.Text = "Поле для русского языка";
+            label2.Text = "ГЏГ®Г«ГҐ Г¤Г«Гї Г°ГіГ±Г±ГЄГ®ГЈГ® ГїГ§Г»ГЄГ ";
         }
         field2.Text = String.Empty;
     }
@@ -66,7 +66,7 @@ public partial class TranslationPage : ContentPage
         }
         catch (Exception ex)
         {
-           await DisplayAlert("Ошибка!", ex.Message, "Ок");
+           await DisplayAlert("ГЋГёГЁГЎГЄГ !", ex.Message, "ГЋГЄ");
         }
     }
     private async void speaker1_Clicked(object sender, EventArgs e)
@@ -82,7 +82,7 @@ public partial class TranslationPage : ContentPage
                         {
                             0 => Preferences.Get("comboValue1", "Microsoft Irina"),
                             1 => Preferences.Get("comboValue2", "Microsoft David"),
-                            _ => throw new VoiceException("Ошибка озвучивания")
+                            _ => throw new VoiceException("ГЋГёГЁГЎГЄГ  Г®Г§ГўГіГ·ГЁГўГ Г­ГЁГї")
                         }))
                     });
 #endif
@@ -91,9 +91,9 @@ public partial class TranslationPage : ContentPage
                     {
                         Locale = locales.Single(l => l.Name ==( MainChosenLanguageFlag switch
                         {
-                            0 => "русский (Россия)",
-                            1 => "английский (Великобритания)",
-                            _ => throw new VoiceException("Ошибка озвучивания")
+                            0 => "Г°ГіГ±Г±ГЄГЁГ© (ГђГ®Г±Г±ГЁГї)",
+                            1 => "Г Г­ГЈГ«ГЁГ©Г±ГЄГЁГ© (Г‚ГҐГ«ГЁГЄГ®ГЎГ°ГЁГІГ Г­ГЁГї)",
+                            _ => throw new VoiceException("ГЋГёГЁГЎГЄГ  Г®Г§ГўГіГ·ГЁГўГ Г­ГЁГї")
                         }))
                     });
 #endif
@@ -101,11 +101,11 @@ public partial class TranslationPage : ContentPage
         }
         catch (VoiceException ex)
         {
-            await DisplayAlert("Ошибка!", ex.Message, "OK");
+            await DisplayAlert("ГЋГёГЁГЎГЄГ !", ex.Message, "OK");
         }
         catch (Exception ex)
         {
-           await DisplayAlert("Ошибка!", ex.Message, "OK");
+           await DisplayAlert("ГЋГёГЁГЎГЄГ !", ex.Message, "OK");
         }
     }
     private async void speaker2_Clicked(object sender, EventArgs e)
@@ -121,7 +121,7 @@ public partial class TranslationPage : ContentPage
                         {
                             0 => Preferences.Get("comboValue2", "Microsoft David"),
                             1 => Preferences.Get("comboValue1", "Microsoft Irina"),
-                            _ => throw new VoiceException("Ошибка озвучивания")
+                            _ => throw new VoiceException("ГЋГёГЁГЎГЄГ  Г®Г§ГўГіГ·ГЁГўГ Г­ГЁГї")
                         }))
                     });
 #endif
@@ -130,9 +130,9 @@ public partial class TranslationPage : ContentPage
                     {
                         Locale = locales.Single(l => l.Name ==( MainChosenLanguageFlag switch
                         {
-                            0 => "английский (Великобритания)",
-                            1 => "русский (Россия)",
-                            _ => throw new VoiceException("Ошибка озвучивания")
+                            0 => "Г Г­ГЈГ«ГЁГ©Г±ГЄГЁГ© (Г‚ГҐГ«ГЁГЄГ®ГЎГ°ГЁГІГ Г­ГЁГї)",
+                            1 => "Г°ГіГ±Г±ГЄГЁГ© (ГђГ®Г±Г±ГЁГї)",
+                            _ => throw new VoiceException("ГЋГёГЁГЎГЄГ  Г®Г§ГўГіГ·ГЁГўГ Г­ГЁГї")
                         }))
                     });
 #endif
@@ -140,18 +140,18 @@ public partial class TranslationPage : ContentPage
         }
         catch (VoiceException ex)
         {
-            await DisplayAlert("Ошибка!", ex.Message, "OK");
+            await DisplayAlert("ГЋГёГЁГЎГЄГ !", ex.Message, "OK");
         }
         catch (Exception ex)
         {
-            await DisplayAlert("Ошибка!", ex.Message, "OK");
+            await DisplayAlert("ГЋГёГЁГЎГЄГ !", ex.Message, "OK");
         }
     }
     private async void OnEditorTextChanged1(object sender, EventArgs e)
     {
         if (field1.Text.Length > 300)
         {
-            await DisplayAlert("Предупреждение!", "Ограничение на 300 символов!", "OK");
+            await DisplayAlert("ГЏГ°ГҐГ¤ГіГЇГ°ГҐГ¦Г¤ГҐГ­ГЁГҐ!", "ГЋГЈГ°Г Г­ГЁГ·ГҐГ­ГЁГҐ Г­Г  300 Г±ГЁГ¬ГўГ®Г«Г®Гў!", "OK");
             field1.Text = field1.Text.Substring(0, 300);
         }
         label3.Text = field1.Text.Length.ToString() + "/300";
