@@ -5,33 +5,97 @@ using System;
 
 namespace MainLibrary
 {
-    public interface IIMageText
+	/// <summary>
+	/// Интрефейс, абстрагирующий структуру логики 
+    /// работы распознавателя текста с изображений
+	/// </summary>
+	public interface IIMageText
     {
+        /// <summary>
+        /// Метод получения русского текста с изображения
+        /// </summary>
+        /// <param name="FilePath">
+        /// Путь к файлу изображения
+        /// </param>
+        /// <returns>
+        /// Строка с распознанным текстом в другом потоке
+        /// </returns>
         static Task<String> GetRuTextFromImage(string FilePath)
         {
             return Task.Run(() => "");
         }
-        static Task<String> GetEnTextFromImage(string FilePath)
+
+		/// <summary>
+		/// Метод получения английского текста с изображения
+		/// </summary>
+		/// <param name="FilePath">
+		/// Путь к файлу изображения
+		/// </param>
+		/// <returns>
+		/// Строка с распознанным текстом в другом потоке
+		/// </returns>
+		static Task<String> GetEnTextFromImage(string FilePath)
         {
             return Task.Run(() => "");
         }
     }
-    public abstract class ImageText 
+
+	/// <summary>
+	/// Аьстрактный класс распознавателя 
+    /// текста с изображений
+	/// </summary>
+	public abstract class ImageText 
     {
-        public virtual Task<String> GetRuTextFromImage(string FilePath)
+		/// <summary>
+		/// Метод получения русского текста с изображения
+		/// </summary>
+		/// <param name="FilePath">
+		/// Путь к файлу изображения
+		/// </param>
+		/// <returns>
+		/// Строка с распознанным текстом в другом потоке
+		/// </returns>
+		public virtual Task<String> GetRuTextFromImage(string FilePath)
         {
             return Task.Run(() => "Русский текст");
         }
-        public virtual Task<String> GetEnTextFromImage(string FilePath)
+
+		/// <summary>
+		/// Метод получения английского текста с изображения
+		/// </summary>
+		/// <param name="FilePath">
+		/// Путь к файлу изображения
+		/// </param>
+		/// <returns>
+		/// Строка с распознанным текстом в другом потоке
+		/// </returns>
+		public virtual Task<String> GetEnTextFromImage(string FilePath)
         {
             return Task.Run(() => "Английский текст");
         }
     }
+
+    /// <summary>
+    /// Класс распознавания текста с изображения
+    /// </summary>
     public class TextFromImages : ImageText, IIMageText
     {
-        TextFromImages() 
+		/// <summary>
+		/// Конструктор класса TextFromImages
+		/// </summary>
+		TextFromImages() 
         { }
-        new public static async Task<string> GetRuTextFromImage(string FilePath)
+
+		/// <summary>
+		/// Асинхронный скрывающий метод получения русского текста с изображения
+		/// </summary>
+		/// <param name="FilePath">
+		/// Путь к файлу изображения
+		/// </param>
+		/// <returns>
+		/// Строка с распознанным текстом в другом асинхронном потоке
+		/// </returns>
+		new public static async Task<string> GetRuTextFromImage(string FilePath)
         {
             try
             {
@@ -51,7 +115,16 @@ namespace MainLibrary
             }
         }
 
-        new public static async Task<string> GetEnTextFromImage(string FilePath)
+		/// <summary>
+		/// Асинхронный скрывающий метод получения английского текста с изображения
+		/// </summary>
+		/// <param name="FilePath">
+		/// Путь к файлу изображения
+		/// </param>
+		/// <returns>
+		/// Строка с распознанным текстом в другом асинхронном потоке
+		/// </returns>
+		new public static async Task<string> GetEnTextFromImage(string FilePath)
         {
             try
             {

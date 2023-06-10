@@ -2,9 +2,17 @@ using Microsoft.Maui.Media;
 using ExceptionClasses;
 namespace TranslatorApp;
 
+
+/// <summary>
+/// Класс представления настроек приложения
+/// </summary>
 public partial class SettingPage : ContentPage
 {
     IEnumerable<Locale> locales;
+
+    /// <summary>
+    /// Конструктор класса
+    /// </summary>
     public SettingPage()
 	{
 		InitializeComponent();
@@ -15,6 +23,10 @@ combobox2.IsEnabled = false;
 combobox1.IsEnabled = false;
 #endif
     }
+
+    /// <summary>
+    /// Асинхоронный метод для выгрузки настроек
+    /// </summary>
     protected async override void OnAppearing()
     {
         base.OnAppearing();
@@ -48,13 +60,18 @@ combobox1.IsEnabled = false;
 #endif
     }
 
-    private void save_Button(object sender, EventArgs e) 
+	/// <summary>
+	/// Обработчик нажатия кнопки сохранения.
+	/// </summary>
+	/// <param name="sender">Источник события.</param>
+	/// <param name="e">Аргументы события.</param>
+	private void save_Button(object sender, EventArgs e) 
     {
         try
         {
             if (String.IsNullOrWhiteSpace(openAIField.Text))
             {
-                throw new EmptyFieldException("Ïîëå äëÿ êëþ÷à OPENAI ïóñòîå");
+                throw new EmptyFieldException("Пустое поле ввода");
             }
             else
             {
@@ -70,17 +87,17 @@ combobox1.IsEnabled = false;
                     Preferences.Set("comboValue2", combobox2.SelectedItem.ToString());
                 }
 #endif
-                DisplayAlert("Óñïåõ!", "Íàñòðîéêè óñïåøíî ñîõðàíåíû!", "OK");
+                DisplayAlert("Успех!", "Настройки сохранены!", "OK");
             }
         }
         
         catch (EmptyFieldException)
         {
-            DisplayAlert("Îøèáêà!", "Ïóñòîå ïîëå ââîäà OpenAI êëþ÷à!", "OK");
+            DisplayAlert("Ошибка!", "Пустое поле ввода", "OK");
         } 
         catch (Exception ex)
         {
-            DisplayAlert("Îøèáêà!", ex.Message, "OK");
+            DisplayAlert("Ошибка!", ex.Message, "OK");
         }
     }
     private void Slider_ValueChanged(object sender, ValueChangedEventArgs e)

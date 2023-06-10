@@ -8,24 +8,53 @@ using System.Threading.Tasks;
 
 namespace MainLibrary
 {
+    /// <summary>
+    /// Интрефейс, абстрагирующий структуру логики работы переводчика
+    /// </summary>
     interface AITranslate
     {
         string RequestTranslateToEn(string sRequest);
         string RequestTranslateToRu(string sRequest);
     }
+
+    /// <summary>
+    /// Класс, позволяющий переводить тексты с применением ИИ 
+    /// </summary>
     public class AIMakesRequest : AITranslate
     {
         private readonly string OPENAI_API_KEY = "key here";
         private readonly string requestTemp = "0.7";
         private string sAnswer = "";
-        public AIMakesRequest() { }
 
-        public AIMakesRequest(string OPEN_AI_KEY, string dTemp)
+		/// <summary>
+		/// Пустрой конструктор класса AIMakesRequest
+		/// </summary>
+		public AIMakesRequest() { }
+
+		/// <summary>
+		/// Перегруженный конструктор класса AIMakesRequest
+		/// </summary>
+        /// <param name="OPEN_AI_KEY"> 
+        /// Ключ OpenAI для осуществления запросов к API
+        /// </param>
+        /// <param name="dTemp">
+        /// Параметр настройки уровня качества перевода
+        /// </param>
+		public AIMakesRequest(string OPEN_AI_KEY, string dTemp)
         {
             this.OPENAI_API_KEY = OPEN_AI_KEY;
             this.requestTemp = dTemp.Replace(",", ".");
         }
 
+        /// <summary>
+        /// Публичный метод перевода русского текста на английский
+        /// </summary>
+        /// <param name="sRequest">
+        /// В качестве входного параметра: текст на русском языке
+        /// </param>
+        /// <returns>
+        /// В качестве выходного парамнетр: текст на английском языке
+        /// </returns>
         public string RequestTranslateToEn(string sRequest)
         {
             try
@@ -43,7 +72,16 @@ namespace MainLibrary
             }
             return sAnswer.Trim();
         }
-        public string RequestTranslateToRu(string sRequest)
+
+		/// <summary>
+		/// Публичный метод перевода английского текста на русский
+		/// </summary>
+		/// <param name="sRequest">
+		/// В качестве входного парамнетра: текст на английском языке
+		/// </param>
+		/// <returns> 
+        /// В качестве выходного параметра: текст на русском языке </returns>
+		public string RequestTranslateToRu(string sRequest)
         {
             try
             {
@@ -60,6 +98,15 @@ namespace MainLibrary
             }
             return sAnswer.Trim();
         }
+        /// <summary>
+        /// Метод отправки запроса OpenAI
+        /// </summary>
+        /// <param name="sQuestion">
+        /// Промпт, осуществляющий логику перевода
+        /// </param>
+        /// <returns>
+        /// Ответ на запрос
+        /// </returns>
         private string SendRequest(string sQuestion)
         {
             //протоколы безопасности для HTTPS-соединения
@@ -109,6 +156,16 @@ namespace MainLibrary
             string sJson = streamReader.ReadToEnd();
             return Deserialization(sJson);
         }
+
+        /// <summary>
+        /// Метод десериализации ответа OpenAI
+        /// </summary>
+        /// <param name="sJson">
+        /// Входной параметр: JSON строка ответа сервера OpenAI
+        /// </param>
+        /// <returns>
+        /// Выходной параметр: Ответ на первоначальный запрос
+        /// </returns>
         private string Deserialization(string sJson)
         {
             // Десериализуем JSON-ответ в объект JToken
@@ -116,8 +173,17 @@ namespace MainLibrary
             string sResponse = response.SelectToken("choices[0].text").ToString();
             return sResponse;
         }
-        //экранирование символов
-        private string PadQuotes(string s)
+
+		/// <summary>
+		/// Метод экранирования входной строки запроса
+		/// </summary>
+		/// <param name="s">
+		/// Строка, попадающая в методы RequestTranslateToRu и RequestTranslateToEn
+		/// </param>
+		/// <returns>
+        /// Строка, с экранированными символами
+        /// </returns>
+		private string PadQuotes(string s)
         {
             if (s.IndexOf("\\") != -1)
                 s = s.Replace("\\", @"\\");
