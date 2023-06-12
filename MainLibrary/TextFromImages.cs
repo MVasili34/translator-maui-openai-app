@@ -18,7 +18,7 @@ namespace MainLibrary
         /// Путь к файлу изображения
         /// </param>
         /// <returns>
-        /// Строка с распознанным текстом в другом потоке
+        /// Строка с распознанным текстом в отдельном потоке
         /// </returns>
         static Task<String> GetRuTextFromImage(string FilePath)
         {
@@ -32,7 +32,7 @@ namespace MainLibrary
 		/// Путь к файлу изображения
 		/// </param>
 		/// <returns>
-		/// Строка с распознанным текстом в другом потоке
+		/// Строка с распознанным текстом в отдельном потоке
 		/// </returns>
 		static Task<String> GetEnTextFromImage(string FilePath)
         {
@@ -41,7 +41,7 @@ namespace MainLibrary
     }
 
 	/// <summary>
-	/// Аьстрактный класс распознавателя 
+	/// Абстрактный класс распознавателя 
     /// текста с изображений
 	/// </summary>
 	public abstract class ImageText 
@@ -53,7 +53,7 @@ namespace MainLibrary
 		/// Путь к файлу изображения
 		/// </param>
 		/// <returns>
-		/// Строка с распознанным текстом в другом потоке
+		/// Строка с распознанным текстом в отдельном потоке
 		/// </returns>
 		public virtual Task<String> GetRuTextFromImage(string FilePath)
         {
@@ -67,7 +67,7 @@ namespace MainLibrary
 		/// Путь к файлу изображения
 		/// </param>
 		/// <returns>
-		/// Строка с распознанным текстом в другом потоке
+		/// Строка с распознанным текстом в отдельном потоке
 		/// </returns>
 		public virtual Task<String> GetEnTextFromImage(string FilePath)
         {
@@ -93,7 +93,7 @@ namespace MainLibrary
 		/// Путь к файлу изображения
 		/// </param>
 		/// <returns>
-		/// Строка с распознанным текстом в другом асинхронном потоке
+		/// Строка с распознанным текстом в асинхронном потоке
 		/// </returns>
 		new public static async Task<string> GetRuTextFromImage(string FilePath)
         {
@@ -122,7 +122,7 @@ namespace MainLibrary
 		/// Путь к файлу изображения
 		/// </param>
 		/// <returns>
-		/// Строка с распознанным текстом в другом асинхронном потоке
+		/// Строка с распознанным текстом в асинхронном потоке
 		/// </returns>
 		new public static async Task<string> GetEnTextFromImage(string FilePath)
         {
