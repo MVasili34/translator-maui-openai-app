@@ -16,7 +16,7 @@
 
 ![image](https://github.com/MVasili34/Translator_NET_MAUI_App/assets/117523384/e34dfe68-e68e-44ca-b0e2-fe7165554228)
   
-![image](https://github.com/MVasili34/Translator_NET_MAUI_App/assets/117523384/c575c977-5e78-4c21-aca9-4850ee83b908)
+![image](https://github.com/MVasili34/Translator_NET_MAUI_App/assets/117523384/24d39ff1-341a-4d72-a705-d00405948ef2)
   
   Скриншоты мобильной версии (Эмулятор: Android 9 - API 28, процессор - x86, память 1 гб):
   
