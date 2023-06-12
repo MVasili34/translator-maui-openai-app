@@ -10,6 +10,8 @@
   
   Cкриншоты Windows-версии приложения:
   
+![image](https://github.com/MVasili34/Translator_NET_MAUI_App/assets/117523384/aa6330b7-b55b-4fb6-beac-27092c2f60ac)
+  
 ![image](https://github.com/MVasili34/Translator_NET_MAUI_App/assets/117523384/1f5e23f3-7a29-4e4b-908e-821fb915d477)
 
 ![image](https://github.com/MVasili34/Translator_NET_MAUI_App/assets/117523384/e34dfe68-e68e-44ca-b0e2-fe7165554228)
