@@ -3,26 +3,25 @@
     
     * два режима работы: англо-русский и русско-английский;
     * перевод текстов до 300 символов;
-    * распознавание текста с изображений (но только одного конкретного языка - русского или английского)
+    * распознавание текста с изображений (но только на Windows)
     * синтезация речи на стороне OS Windows и Android;
     * система настроек OpenAI, регулируящая точность перевода;
-  На данный момент приложение собиралось только на Windows и Andoid. На других ОС, таких как Mac OS, IOS работа не гарантирована. Тестовые дебаг-устройства: Ноутбук Lenovo Legion Y530-15ICH (Win 11, RAM 8gb, i5-8300h), Мобильное устройство Xiaomi Redmi Note 11 (Android 12 - API 31, arm64-v8a, RAM 6gb).
+  На данный момент приложение собиралось только на Windows и Andoid. На других ОС, таких как Mac OS, IOS работа не гарантирована. Тестовые дебаг-устройства: ПК - Win 11, RAM 32gb, i5-135000; Мобильное устройство Xiaomi Redmi Note 11 (Android 12 - API 31, arm64-v8a, RAM 6gb).
   
   Cкриншоты Windows-версии приложения:
   
-![image](https://github.com/MVasili34/Translator_NET_MAUI_App/assets/117523384/a2270b79-6e73-497e-b609-40e602bec45f)
+![image](https://github.com/MVasili34/Translator_NET_MAUI_App/assets/117523384/961600d5-9a92-401b-88b7-989c8e780ad1)
   
-![image](https://github.com/MVasili34/Translator_NET_MAUI_App/assets/117523384/1f5e23f3-7a29-4e4b-908e-821fb915d477)
+![image](https://github.com/MVasili34/Translator_NET_MAUI_App/assets/117523384/2bc7c010-835a-4e65-9170-80493de86e68)
 
-![image](https://github.com/MVasili34/Translator_NET_MAUI_App/assets/117523384/e34dfe68-e68e-44ca-b0e2-fe7165554228)
+![image](https://github.com/MVasili34/Translator_NET_MAUI_App/assets/117523384/d3981e62-5a22-4d35-976e-639b030b1fef)
   
-![image](https://github.com/MVasili34/Translator_NET_MAUI_App/assets/117523384/24d39ff1-341a-4d72-a705-d00405948ef2)
+  Скриншоты мобильной версии - Xiaomi Redmi Note 11 (Android 12 - API 31, arm64-v8a, RAM 6gb):
   
-  Скриншоты мобильной версии (Эмулятор: Android 9 - API 28, процессор - x86, память 1 гб):
-  
-![image](https://github.com/MVasili34/Translator_NET_MAUI_App/assets/117523384/b005258e-5f8f-4d10-8928-85066e17fe0f)
-![image](https://github.com/MVasili34/Translator_NET_MAUI_App/assets/117523384/014c6977-772c-43ae-afa2-6699cefc9da9)
-  
-![image](https://github.com/MVasili34/Translator_NET_MAUI_App/assets/117523384/a3cda993-5d04-4e6f-8949-e1c6f6fda23d)
-![image](https://github.com/MVasili34/Translator_NET_MAUI_App/assets/117523384/a1da97d0-a7a9-48ab-9894-7410c08d5bd1)
+![image](https://github.com/MVasili34/Translator_NET_MAUI_App/assets/117523384/8de4810a-f8c5-4e7c-9500-aaf0dbd31630)
+![image](https://github.com/MVasili34/Translator_NET_MAUI_App/assets/117523384/694dc8a1-8b7a-405d-b899-4f0f85478cd9)
+
+
+![image](https://github.com/MVasili34/Translator_NET_MAUI_App/assets/117523384/02619b4a-304a-42b2-9840-36f9cd5ea363)
+
 
