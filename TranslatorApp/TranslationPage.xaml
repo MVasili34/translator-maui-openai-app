@@ -10,16 +10,17 @@
                 Text="Поле для русского языка:"
                 SemanticProperties.HeadingLevel="Level2"
                 SemanticProperties.Description="Welcome to dot net Multi platform App U I"
-                FontSize="18" TextColor="Black"   
+                  Margin="5"
+                FontSize="18" TextColor="White"   
                  />
-           <Editor x:Name="field1" Placeholder="Введите текст для перевода..." TextChanged="OnEditorTextChanged1" HeightRequest="250" WidthRequest="350" BackgroundColor="#BFCDDA"  FontSize="16" TextColor="Black"/>
+                <Editor x:Name="field1" Placeholder="Введите текст для перевода..." TextChanged="OnEditorTextChanged1" HeightRequest="250" WidthRequest="350" BackgroundColor="#404448"  FontSize="16" TextColor="White"/>
                 <HorizontalStackLayout>
                     <Button ImageSource="speaker.png" Clicked="speaker1_Clicked" HeightRequest="40" WidthRequest="55" BackgroundColor="#BFCDDA" BorderColor="Black" BorderWidth="1" HorizontalOptions="Center" Margin="2"/>
                     <Label x:Name="label3"
                 Text="0/300"
                 SemanticProperties.HeadingLevel="Level2"
                 SemanticProperties.Description="Welcome to dot net Multi platform App U I"
-                FontSize="18" TextColor="Black"
+                FontSize="18" TextColor="White"
                  />
                 </HorizontalStackLayout>
         </VerticalStackLayout>
@@ -31,10 +32,11 @@
                 <Label x:Name="label2"
                 Text="English language field:"
                 SemanticProperties.HeadingLevel="Level2"
+                       Margin="5"
                 SemanticProperties.Description="Welcome to dot net Multi platform App U I"
-                FontSize="18" TextColor="Black"   
+                FontSize="18" TextColor="White"   
                  />
-                <Editor IsReadOnly="True" x:Name="field2" HeightRequest="250" WidthRequest="350" BackgroundColor="#BFCDDA"  FontSize="16" TextColor="Black"/>
+                <Editor IsReadOnly="True" x:Name="field2" HeightRequest="250" WidthRequest="350" BackgroundColor="#404448"  FontSize="16" TextColor="White"/>
                 <HorizontalStackLayout>
                 <Button ImageSource="speaker.png" Clicked="speaker2_Clicked" HeightRequest="40" WidthRequest="55" BackgroundColor="#BFCDDA" BorderColor="Black" BorderWidth="1" HorizontalOptions="Center" Margin="2"/>
                 

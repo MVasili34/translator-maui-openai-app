@@ -9,21 +9,17 @@ public partial class TextFromImage : ContentPage
 {
     private string imagePath="";
 
-	/// <summary>
-	/// Конструктор класса TextFromImage
-	/// </summary>
 	public TextFromImage()
 	{
 		InitializeComponent();
-        BackgroundColor = new Color(192, 192, 255);
+        BackgroundColor = new Color(51, 51, 51);
     }
 
-
-	/// <summary>
+    /// <summary>
 	/// Обработчик нажатия кнопки выбора изображения.
-	/// </summary>
-	/// <param name="sender">Источник события.</param>
-	/// <param name="e">Аргументы события.</param>
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
 	private async void imageButton_Clicked(object sender, EventArgs e)
     {
         var result = await FilePicker.PickAsync(new PickOptions
@@ -41,34 +37,34 @@ public partial class TextFromImage : ContentPage
     }
 
 
-	/// <summary>
+    /// <summary>
 	/// Обработчик нажатия кнопки распознавания текста на английский язык.
-	/// </summary>
-	/// <param name="sender">Источник события.</param>
-	/// <param name="e">Аргументы события.</param>
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
 	private async void engButton_Clicked(object sender, EventArgs e)
     {
         if (String.IsNullOrEmpty(imagePath)) return;
         field1.Text = await TextFromImages.GetEnTextFromImage(imagePath);
     }
 
-	/// <summary>
-	/// Обработчик нажатия кнопки распознавания текста на русский язык.
-	/// </summary>
-	/// <param name="sender">Источник события.</param>
-	/// <param name="e">Аргументы события.</param>
-	private async void rusButton_Clicked(Object sender, EventArgs e)
+    /// <summary>
+    /// Обработчик нажатия кнопки распознавания текста на русский язык.
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
+    private async void rusButton_Clicked(Object sender, EventArgs e)
     {
         if (String.IsNullOrEmpty (imagePath)) return;
         field1.Text = await TextFromImages.GetRuTextFromImage(imagePath);
     }
 
-	/// <summary>
-	/// Обработчик нажатия кнопки перехода в другую вкладку.
-	/// </summary>
-	/// <param name="sender">Источник события.</param>
-	/// <param name="e">Аргументы события.</param>
-	private async void redirect_Clicked(object sender, EventArgs e)
+    /// <summary>
+    /// Обработчик нажатия кнопки перехода в другую вкладку.
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
+    private async void redirect_Clicked(object sender, EventArgs e)
     {
         if (!string.IsNullOrEmpty(field1.Text))
         await Navigation.PushAsync(new TranslationPage(field1.Text));

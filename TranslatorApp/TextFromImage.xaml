@@ -11,12 +11,12 @@
                 <Image x:Name="pictureBox" Source="instructiontouse.png" SemanticProperties.Description="Image to read" HeightRequest="250" HorizontalOptions="Center"/>
             </VerticalStackLayout>
             <VerticalStackLayout>
-                <Editor x:Name="field1" HeightRequest="250" WidthRequest="325" BackgroundColor="#BFCDDA"  FontSize="16" TextColor="Black" Margin="5"/>
+                <Editor x:Name="field1" HeightRequest="250" WidthRequest="325" BackgroundColor="#404448"  FontSize="16" TextColor="White" Margin="5"/>
                 <HorizontalStackLayout>
-                    <Button Text="Получить текст (RU)" Clicked="rusButton_Clicked" BackgroundColor="Indigo" TextColor="White"  BorderWidth="1" HorizontalOptions="Center" Margin="2"/>
-                    <Button Text="Получить текст (EN)" Clicked="engButton_Clicked" BackgroundColor="Indigo" TextColor="White"  BorderWidth="1" HorizontalOptions="Center" Margin="2"/>
+                    <Button Text="Получить текст (RU)" Clicked="rusButton_Clicked" BackgroundColor="#6729FF" TextColor="White"  BorderWidth="1" HorizontalOptions="Center" Margin="2"/>
+                    <Button Text="Получить текст (EN)" Clicked="engButton_Clicked" BackgroundColor="#6729FF" TextColor="White"  BorderWidth="1" HorizontalOptions="Center" Margin="2"/>
                 </HorizontalStackLayout>
-                <Button Text="Перевести" Clicked="redirect_Clicked" BackgroundColor="Indigo" TextColor="White"  BorderWidth="1" HorizontalOptions="Center" Margin="5"/>
+                <Button Text="Перевести" Clicked="redirect_Clicked" BackgroundColor="#6729FF" TextColor="White"  BorderWidth="1" HorizontalOptions="Center" Margin="5"/>
                 <Label Text=""/>
             </VerticalStackLayout>
         </FlexLayout>

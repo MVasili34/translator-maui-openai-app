@@ -7,7 +7,7 @@ public partial class MainPage : ContentPage
 	public MainPage()
 	{
 		InitializeComponent();
-		BackgroundColor = new Color(192, 192, 255);
+		BackgroundColor = new Color(51, 51, 51);
 	}
 
 	private async void OnCounterClicked(object sender, EventArgs e)

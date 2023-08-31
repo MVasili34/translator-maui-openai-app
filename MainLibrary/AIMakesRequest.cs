@@ -26,20 +26,8 @@ namespace MainLibrary
         private readonly string requestTemp = "0.7";
         private string sAnswer = "";
 
-		/// <summary>
-		/// Пустрой конструктор класса AIMakesRequest
-		/// </summary>
 		public AIMakesRequest() { }
 
-		/// <summary>
-		/// Перегруженный конструктор класса AIMakesRequest
-		/// </summary>
-        /// <param name="OPEN_AI_KEY"> 
-        /// Ключ OpenAI для осуществления запросов к API
-        /// </param>
-        /// <param name="dTemp">
-        /// Параметр настройки уровня качества перевода
-        /// </param>
 		public AIMakesRequest(string OPEN_AI_KEY, string dTemp)
         {
             this.OPENAI_API_KEY = OPEN_AI_KEY;
@@ -47,14 +35,10 @@ namespace MainLibrary
         }
 
         /// <summary>
-        /// Публичный метод перевода русского текста на английский
+        /// Метод перевода русского текста на английский
         /// </summary>
-        /// <param name="sRequest">
-        /// В качестве входного параметра: текст на русском языке
-        /// </param>
-        /// <returns>
-        /// В качестве выходного парамнетр: текст на английском языке
-        /// </returns>
+        /// <param name="sRequest"> Tекст на русском языке </param>
+        /// <returns> Tекст на английском языке </returns>
         public string RequestTranslateToEn(string sRequest)
         {
             try
@@ -73,14 +57,12 @@ namespace MainLibrary
             return sAnswer.Trim();
         }
 
-		/// <summary>
-		/// Публичный метод перевода английского текста на русский
-		/// </summary>
-		/// <param name="sRequest">
-		/// В качестве входного парамнетра: текст на английском языке
-		/// </param>
-		/// <returns> 
-        /// В качестве выходного параметра: текст на русском языке </returns>
+		/// <summary> 
+        /// Метод перевода английского текста на русский
+        /// </summary>
+		/// <param name="sRequest"> Текст на английском языке </param>
+		/// <returns> Текст на русском языке </returns>
+        
 		public string RequestTranslateToRu(string sRequest)
         {
             try
@@ -101,12 +83,8 @@ namespace MainLibrary
         /// <summary>
         /// Метод отправки запроса OpenAI
         /// </summary>
-        /// <param name="sQuestion">
-        /// Промпт, осуществляющий логику перевода
-        /// </param>
-        /// <returns>
-        /// Ответ на запрос
-        /// </returns>
+        /// <param name="sQuestion"> Промпт, осуществляющий логику перевода </param>
+        /// <returns> Ответ на запрос </returns>
         private string SendRequest(string sQuestion)
         {
             //протоколы безопасности для HTTPS-соединения
@@ -160,12 +138,8 @@ namespace MainLibrary
         /// <summary>
         /// Метод десериализации ответа OpenAI
         /// </summary>
-        /// <param name="sJson">
-        /// Входной параметр: JSON строка ответа сервера OpenAI
-        /// </param>
-        /// <returns>
-        /// Выходной параметр: Ответ на первоначальный запрос
-        /// </returns>
+        /// <param name="sJson">JSON строка ответа сервера OpenAI </param>
+        /// <returns> Ответ на первоначальный запрос </returns>
         private string Deserialization(string sJson)
         {
             // Десериализуем JSON-ответ в объект JToken
@@ -177,12 +151,9 @@ namespace MainLibrary
 		/// <summary>
 		/// Метод экранирования входной строки запроса
 		/// </summary>
-		/// <param name="s">
-		/// Строка, попадающая в методы RequestTranslateToRu и RequestTranslateToEn
-		/// </param>
-		/// <returns>
-        /// Строка, с экранированными символами
-        /// </returns>
+		/// <param name="s"> Строка, попадающая в методы RequestTranslateToRu
+        /// и RequestTranslateToEn </param>
+		/// <returns> Строка, с экранированными символами </returns>
 		private string PadQuotes(string s)
         {
             if (s.IndexOf("\\") != -1)

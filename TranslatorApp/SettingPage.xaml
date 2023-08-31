@@ -10,33 +10,33 @@
                 <Label
             Text="Ключ аутентификации OpenAI"
             VerticalOptions="Start" 
-            HorizontalOptions="Start" TextColor="Black"/>
-                <Entry x:Name="openAIField" WidthRequest="250" BackgroundColor="#BFCDDA" TextColor="Black" Margin="3"/>
+            HorizontalOptions="Start" TextColor="White"/>
+                <Entry x:Name="openAIField" WidthRequest="250" BackgroundColor="#404448" TextColor="White" Margin="3"/>
             <Label Text="&#10;"/>
             <Label
             Text="Температура запроса"
             VerticalOptions="Start" 
-            HorizontalOptions="Start" TextColor="Black"/>
+            HorizontalOptions="Start" TextColor="White"/>
             <Slider x:Name="slider" Maximum="1.0" Minimum="0.1" ValueChanged="Slider_ValueChanged" WidthRequest="250"/>
                 <HorizontalStackLayout>
                     <Label
                     Text="0.1  0.2  0.3  0.4  0.5  0.6  0.7  0.8  0.9  1.0"
                     VerticalOptions="Start" 
-                    HorizontalOptions="Start" TextColor="Black"/>
+                    HorizontalOptions="Start" TextColor="White"/>
                 </HorizontalStackLayout>
                 <Label Text="&#10;"/>
                     <Label
                     Text="Русский голос"
                     VerticalOptions="Start" 
-                    HorizontalOptions="Start" TextColor="Black"/>
-                <Picker x:Name="combobox1" WidthRequest="250" SelectedIndex="1" BackgroundColor="#BFCDDA" TextColor="Black"/>
+                    HorizontalOptions="Start" TextColor="White"/>
+                <Picker x:Name="combobox1" WidthRequest="250" SelectedIndex="1" BackgroundColor="#404448" TextColor="White"/>
                 <Label Text="&#10;"/>
                 <Label
                     Text="Английский голос"
                     VerticalOptions="Start" 
                     HorizontalOptions="Start" TextColor="Black"/>
-                <Picker x:Name="combobox2" WidthRequest="250" SelectedIndex="0" BackgroundColor="#BFCDDA" TextColor="Black"/>
-                <Button Clicked="save_Button" Text="Сохранить" BackgroundColor="Indigo" TextColor="White" Margin="10"/>
+                <Picker x:Name="combobox2" WidthRequest="250" SelectedIndex="0" BackgroundColor="#404448" TextColor="White"/>
+                <Button Clicked="save_Button" Text="Сохранить" BackgroundColor="#6729FF" TextColor="White" Margin="10"/>
            </VerticalStackLayout>
         </FlexLayout>
     </ScrollView>

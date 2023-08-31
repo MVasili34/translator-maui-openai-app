@@ -11,29 +11,11 @@ namespace MainLibrary
 	/// </summary>
 	public interface IIMageText
     {
-        /// <summary>
-        /// Метод получения русского текста с изображения
-        /// </summary>
-        /// <param name="FilePath">
-        /// Путь к файлу изображения
-        /// </param>
-        /// <returns>
-        /// Строка с распознанным текстом в отдельном потоке
-        /// </returns>
         static Task<String> GetRuTextFromImage(string FilePath)
         {
             return Task.Run(() => "");
         }
 
-		/// <summary>
-		/// Метод получения английского текста с изображения
-		/// </summary>
-		/// <param name="FilePath">
-		/// Путь к файлу изображения
-		/// </param>
-		/// <returns>
-		/// Строка с распознанным текстом в отдельном потоке
-		/// </returns>
 		static Task<String> GetEnTextFromImage(string FilePath)
         {
             return Task.Run(() => "");
@@ -46,29 +28,11 @@ namespace MainLibrary
 	/// </summary>
 	public abstract class ImageText 
     {
-		/// <summary>
-		/// Метод получения русского текста с изображения
-		/// </summary>
-		/// <param name="FilePath">
-		/// Путь к файлу изображения
-		/// </param>
-		/// <returns>
-		/// Строка с распознанным текстом в отдельном потоке
-		/// </returns>
 		public virtual Task<String> GetRuTextFromImage(string FilePath)
         {
             return Task.Run(() => "Русский текст");
         }
 
-		/// <summary>
-		/// Метод получения английского текста с изображения
-		/// </summary>
-		/// <param name="FilePath">
-		/// Путь к файлу изображения
-		/// </param>
-		/// <returns>
-		/// Строка с распознанным текстом в отдельном потоке
-		/// </returns>
 		public virtual Task<String> GetEnTextFromImage(string FilePath)
         {
             return Task.Run(() => "Английский текст");
@@ -80,21 +44,13 @@ namespace MainLibrary
     /// </summary>
     public class TextFromImages : ImageText, IIMageText
     {
-		/// <summary>
-		/// Конструктор класса TextFromImages
-		/// </summary>
-		TextFromImages() 
-        { }
+		TextFromImages() { }
 
 		/// <summary>
 		/// Асинхронный скрывающий метод получения русского текста с изображения
 		/// </summary>
-		/// <param name="FilePath">
-		/// Путь к файлу изображения
-		/// </param>
-		/// <returns>
-		/// Строка с распознанным текстом в асинхронном потоке
-		/// </returns>
+		/// <param name="FilePath"> Путь к файлу изображения </param>
+		/// <returns> Строка с распознанным текстом в асинхронном поток </returns>
 		new public static async Task<string> GetRuTextFromImage(string FilePath)
         {
             try
@@ -118,12 +74,8 @@ namespace MainLibrary
 		/// <summary>
 		/// Асинхронный скрывающий метод получения английского текста с изображения
 		/// </summary>
-		/// <param name="FilePath">
-		/// Путь к файлу изображения
-		/// </param>
-		/// <returns>
-		/// Строка с распознанным текстом в асинхронном потоке
-		/// </returns>
+		/// <param name="FilePath"> Путь к файлу изображения </param>
+		/// <returns> Строка с распознанным текстом в асинхронном потоке </returns>
 		new public static async Task<string> GetEnTextFromImage(string FilePath)
         {
             try

@@ -2,21 +2,14 @@ using Microsoft.Maui.Media;
 using ExceptionClasses;
 namespace TranslatorApp;
 
-
-/// <summary>
-/// Класс представления настроек приложения
-/// </summary>
 public partial class SettingPage : ContentPage
 {
     IEnumerable<Locale> locales;
 
-    /// <summary>
-    /// Конструктор класса
-    /// </summary>
     public SettingPage()
 	{
 		InitializeComponent();
-        BackgroundColor = new Color(192, 192, 255);
+        BackgroundColor = new Color(51, 51, 51);
 
 #if ANDROID
 combobox2.IsEnabled = false;
@@ -60,12 +53,12 @@ combobox1.IsEnabled = false;
 #endif
     }
 
-	/// <summary>
-	/// Обработчик нажатия кнопки сохранения.
-	/// </summary>
-	/// <param name="sender">Источник события.</param>
-	/// <param name="e">Аргументы события.</param>
-	private void save_Button(object sender, EventArgs e) 
+    /// <summary>
+    /// Обработчик нажатия кнопки сохранения.
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
+    private void save_Button(object sender, EventArgs e) 
     {
         try
         {

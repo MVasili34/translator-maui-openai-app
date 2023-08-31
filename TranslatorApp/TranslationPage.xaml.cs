@@ -4,21 +4,22 @@ using ExceptionClasses;
 
 namespace TranslatorApp;
 
-/// <summary>
-/// Класс представления перевода текста
-/// </summary>
 public partial class TranslationPage : ContentPage
 {
     int MainChosenLanguageFlag = 0;
     AIMakesRequest request;
     IEnumerable<Locale> locales;
 
-	/// <summary>
-	/// Констркуто класса TranslationPage
-	/// </summary>
 	public TranslationPage()
 	{
 		InitializeComponent();
+        BackgroundColor = new Color(51, 51, 51);
+    }
+
+    public TranslationPage(string textToTranslate)
+    {
+        InitializeComponent();
+        field1.Text = textToTranslate;
         BackgroundColor = new Color(192, 192, 255);
     }
 
@@ -32,24 +33,10 @@ public partial class TranslationPage : ContentPage
     }
 
 	/// <summary>
-	/// Перегруженный констркуто класса TranslationPage,
-    /// получающий текст для перевода с другого представления
-	/// </summary>
-    /// <param name="textToTranslate"> 
-    /// Текст для перевода с другого представления
-    /// </param>
-	public TranslationPage(string textToTranslate)
-    {
-        InitializeComponent();
-        field1.Text = textToTranslate;
-        BackgroundColor = new Color(192, 192, 255);
-    }
-
-	/// <summary>
 	/// Обработчик нажатия кнопки смены режима работы.
 	/// </summary>
-	/// <param name="sender">Источник события.</param>
-	/// <param name="e">Аргументы события.</param>
+	/// <param name="sender"></param>
+	/// <param name="e"></param>
 	private void exchange_Clicked(object sender, EventArgs e)
     {
         if (MainChosenLanguageFlag == 1)
@@ -72,8 +59,8 @@ public partial class TranslationPage : ContentPage
 	/// <summary>
 	/// Обработчик нажатия кнопки выполения перевода.
 	/// </summary>
-	/// <param name="sender">Источник события.</param>
-	/// <param name="e">Аргументы события.</param>
+	/// <param name="sender"></param>
+	/// <param name="e"></param>
 	private async void translateBut_Clicked(object sender, EventArgs e)
     {
         request = new(Preferences.Get("OPEN_APIKEY", "key here"),
@@ -102,8 +89,8 @@ public partial class TranslationPage : ContentPage
 	/// <summary>
 	/// Обработчик нажатия кнопки синтезатора речи поля ввода.
 	/// </summary>
-	/// <param name="sender">Источник события.</param>
-	/// <param name="e">Аргументы события.</param>
+	/// <param name="sender"></param>
+	/// <param name="e"></param>
 	private async void speaker1_Clicked(object sender, EventArgs e)
     {
         try
@@ -147,8 +134,8 @@ public partial class TranslationPage : ContentPage
 	/// <summary>
 	/// Обработчик нажатия кнопки синтезатора речи поля вывода.
 	/// </summary>
-	/// <param name="sender">Источник события.</param>
-	/// <param name="e">Аргументы события.</param>
+	/// <param name="sender"></param>
+	/// <param name="e"></param>
 	private async void speaker2_Clicked(object sender, EventArgs e)
     {
         try
@@ -192,8 +179,8 @@ public partial class TranslationPage : ContentPage
 	/// <summary>
 	/// Обработчик события подсчёта кол-ва символов в поле ввода.
 	/// </summary>
-	/// <param name="sender">Источник события.</param>
-	/// <param name="e">Аргументы события.</param>
+	/// <param name="sender"></param>
+	/// <param name="e"></param>
 	private async void OnEditorTextChanged1(object sender, EventArgs e)
     {
         if (field1.Text.Length > 300)
